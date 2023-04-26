@@ -1,5 +1,4 @@
 default.fg=$text
-default.bg=$base
 
 error.fg=$red
 warning.fg=$peach
