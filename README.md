@@ -36,14 +36,14 @@
 
 ## Usage
 
-1. Download the corresponding theme file
-2. Move it into `$XDG_CONFIG_HOME/aerc/stylesets/`
-3. Add this snippet do `$XDC_CONFIG_HOME/aerc/aerc.conf`:
+1. Download the corresponding theme file from [`dist/`](dist)
+2. Move it into `~/.config/aerc/stylesets/`
+3. Add this snippet to `~/.config/aerc/aerc.conf`:
 
 ```ini
 border-char-vertical="│"
 border-char-horizontal="─"
-styleset-name=<latte|frappe|macchiato|mocha>
+styleset-name=catppuccin-$FLAVOUR
 ```
 
 ## 💝 Thanks to
