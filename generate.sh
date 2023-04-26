@@ -7,6 +7,6 @@ PALETTE=$(curl -s https://raw.githubusercontent.com/catppuccin/palette/main/pale
 for flavour in latte frappe macchiato mocha; do
   echo $PALETTE \
   | gojq --arg flavour "$flavour" -r \
-    '.[$flavour] | map_values(.hex) | to_entries | reduce .[] as $it (""; . + "s/$\($it.key)/#\($it.value)/g;")' \
+    '.[$flavour] | to_entries | map("s/$\(.key)/#\(.value.hex)/g;") | add' \
   | sed -f - template > dist/catppuccin-"$flavour"
 done
