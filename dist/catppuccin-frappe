@@ -28,3 +28,17 @@ statusline_default.fg=#949cbb
 statusline_default.bg=#414559
 statusline_error.bold=true
 statusline_success.bold=true
+
+[viewer]
+url.fg=#8caaee
+url.underline=true
+header.bold=true
+signature.dim=true
+diff_meta.bold=true
+diff_chunk.fg=#8caaee
+diff_add.fg=#a6d189
+diff_del.fg=#e78284
+quote_*.fg=#737994
+quote_1.fg=#949cbb
+
+

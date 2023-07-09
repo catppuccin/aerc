@@ -28,3 +28,16 @@ statusline_default.fg=$overlay2
 statusline_default.bg=$surface0
 statusline_error.bold=true
 statusline_success.bold=true
+
+[viewer]
+url.fg=$blue
+url.underline=true
+header.bold=true
+signature.dim=true
+diff_meta.bold=true
+diff_chunk.fg=$blue
+diff_add.fg=$green
+diff_del.fg=$red
+quote_*.fg=$overlay0
+quote_1.fg=$overlay2
+
