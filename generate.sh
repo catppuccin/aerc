@@ -2,9 +2,19 @@
 
 PALETTE=$(curl -s https://raw.githubusercontent.com/catppuccin/palette/main/palette-porcelain.json)
 
+PROGRAM=$(cat <<EOF
+reduce (.[\$flavour] | to_entries | .[]) as \$x
+  (
+    \$template;
+    sub(\$x | "\\\\$\(.key)"; \$x | "#\(.value.hex)"; "g")
+  )
+EOF
+)
+
 for flavour in latte frappe macchiato mocha; do
-  echo "$PALETTE" |
-    gojq -r --arg flavour "$flavour" \
-      '.[$flavour] | to_entries | map("s/$\(.key)/#\(.value.hex)/g;") | add' |
-    sed -f - template >./dist/catppuccin-"$flavour"
+  echo "$PALETTE" | jq -r \
+    --arg flavour "$flavour" \
+    --rawfile template ./template \
+    "$PROGRAM" \
+    >dist/catppuccin-"$flavour"
 done
