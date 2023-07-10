@@ -40,4 +40,3 @@ diff_add.fg=$green
 diff_del.fg=$red
 quote_*.fg=$overlay0
 quote_1.fg=$overlay2
-
