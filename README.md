@@ -41,6 +41,7 @@
 3. Add this snippet to `~/.config/aerc/aerc.conf`:
 
 ```ini
+[ui]
 border-char-vertical="│"
 border-char-horizontal="─"
 styleset-name=catppuccin-$FLAVOUR
