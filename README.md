@@ -44,7 +44,7 @@
 [ui]
 border-char-vertical="│"
 border-char-horizontal="─"
-styleset-name=catppuccin-$FLAVOUR
+styleset-name=catppuccin-$FLAVOR
 ```
 
 ## 💝 Thanks to
