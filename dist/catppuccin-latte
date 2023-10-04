@@ -1,3 +1,6 @@
+*.default=true
+*.normal=true
+
 default.fg=#4c4f69
 
 error.fg=#d20f39
@@ -36,6 +39,8 @@ header.bold=true
 signature.dim=true
 diff_meta.bold=true
 diff_chunk.fg=#1e66f5
+diff_chunk_func.fg=#1e66f5
+diff_chunk_func.bold=true
 diff_add.fg=#40a02b
 diff_del.fg=#d20f39
 quote_*.fg=#9ca0b0

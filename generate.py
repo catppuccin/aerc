@@ -3,9 +3,7 @@
 import urllib.request
 import json
 
-PALETTE_URL = 'https://raw.githubusercontent.com/catppuccin/palette/main/palette-porcelain.json'
-
-palette = json.load(urllib.request.urlopen(PALETTE_URL))
+palette = json.load(urllib.request.urlopen('https://raw.githubusercontent.com/catppuccin/palette/main/palette-porcelain.json'))
 with open('template', 'r') as file:
     template = file.read()
 
