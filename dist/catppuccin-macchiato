@@ -1,5 +1,8 @@
 *.default=true
 *.normal=true
+*.selected.bold=true
+*.selected.bg=#cad3f5
+*.selected.fg=#24273a
 
 default.fg=#cad3f5
 
@@ -17,18 +20,21 @@ border.fg=#181926
 border.bold=true
 
 msglist_unread.bold=true
+msglist_unread.fg=#a6da95
+msglist_unread.selected.bg=#a6da95
+msglist_unread.selected.fg=#24273a
 msglist_flagged.fg=#eed49f
 msglist_flagged.bold=true
 msglist_result.fg=#8aadf4
 msglist_result.bold=true
 msglist_*.selected.bold=true
-msglist_*.selected.bg=#363a4f
+msglist_*.selected.bg=#cad3f5
 
 dirlist_*.selected.bold=true
-dirlist_*.selected.bg=#363a4f
+dirlist_*.selected.bg=#cad3f5
 
-statusline_default.fg=#939ab7
-statusline_default.bg=#363a4f
+statusline_default.fg=#cad3f5
+statusline_default.bg=#24273a
 statusline_error.bold=true
 statusline_success.bold=true
 
