@@ -47,6 +47,12 @@ border-char-horizontal="─"
 styleset-name=catppuccin-$FLAVOR
 ```
 
+## Building the stylesets
+
+The stylesets are all generated from the `theme.hbs` file using the
+[Whiskers](https://github.com/catppuccin/toolbox/tree/main/whiskers) tool. To
+generate them, run `make`.
+
 ## 💝 Thanks to
 
 - [Stonks3141](https://github.com/Stonks3141)
