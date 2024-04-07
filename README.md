@@ -49,9 +49,9 @@ styleset-name=catppuccin-$FLAVOR
 
 ## Building the stylesets
 
-The stylesets are all generated from the `theme.hbs` file using the
+The stylesets are all generated from the `theme.tera` file using the
 [Whiskers](https://github.com/catppuccin/toolbox/tree/main/whiskers) tool. To
-generate them, run `make`.
+generate them, run `whiskers theme.tera`.
 
 ## 💝 Thanks to
 

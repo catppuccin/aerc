@@ -1,0 +1,58 @@
+---
+app: aerc
+author: Stonks3141
+whiskers:
+  version: 2.0.0
+  matrix:
+    - flavor
+  filename: 'dist/catppuccin-{{flavor.identifier}}'
+---
+{%- set palette = flavor.colors -%}
+
+*.default=true
+*.normal=true
+
+default.fg=#{{palette.text.hex}}
+
+error.fg=#{{palette.red.hex}}
+warning.fg=#{{palette.peach.hex}}
+success.fg=#{{palette.green.hex}}
+
+tab.fg=#{{palette.overlay0.hex}}
+tab.bg=#{{palette.mantle.hex}}
+tab.selected.fg=#{{palette.text.hex}}
+tab.selected.bg=#{{palette.base.hex}}
+tab.selected.bold=true
+
+border.fg=#{{palette.crust.hex}}
+border.bold=true
+
+msglist_unread.bold=true
+msglist_flagged.fg=#{{palette.yellow.hex}}
+msglist_flagged.bold=true
+msglist_result.fg=#{{palette.blue.hex}}
+msglist_result.bold=true
+msglist_*.selected.bold=true
+msglist_*.selected.bg=#{{palette.surface0.hex}}
+
+dirlist_*.selected.bold=true
+dirlist_*.selected.bg=#{{palette.surface0.hex}}
+
+statusline_default.fg=#{{palette.overlay2.hex}}
+statusline_default.bg=#{{palette.surface0.hex}}
+statusline_error.bold=true
+statusline_success.bold=true
+
+[viewer]
+url.fg=#{{palette.blue.hex}}
+url.underline=true
+header.bold=true
+signature.dim=true
+diff_meta.bold=true
+diff_chunk.fg=#{{palette.blue.hex}}
+diff_chunk_func.fg=#{{palette.blue.hex}}
+diff_chunk_func.bold=true
+diff_add.fg=#{{palette.green.hex}}
+diff_del.fg=#{{palette.red.hex}}
+quote_*.fg=#{{palette.overlay0.hex}}
+quote_1.fg=#{{palette.overlay2.hex}}
