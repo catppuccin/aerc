@@ -43,6 +43,8 @@ statusline_default.bg=#{{palette.surface0.hex}}
 statusline_error.bold=true
 statusline_success.bold=true
 
+completion_default.selected.bg=#{{palette.surface0.hex}}
+
 [viewer]
 url.fg=#{{palette.blue.hex}}
 url.underline=true
