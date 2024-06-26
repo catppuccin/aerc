@@ -32,6 +32,8 @@ statusline_default.bg=#414559
 statusline_error.bold=true
 statusline_success.bold=true
 
+completion_default.selected.bg=#414559
+
 [viewer]
 url.fg=#8caaee
 url.underline=true
