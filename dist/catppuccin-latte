@@ -34,6 +34,9 @@ statusline_success.bold=true
 
 completion_default.selected.bg=#ccd0da
 
+part_filename.selected.bold=true
+part_mimetype.selected.bold=true
+
 [viewer]
 url.fg=#1e66f5
 url.underline=true
