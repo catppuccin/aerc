@@ -32,6 +32,8 @@ statusline_default.bg=#313244
 statusline_error.bold=true
 statusline_success.bold=true
 
+selector_focused.bg=#313244
+
 completion_default.selected.bg=#313244
 
 [viewer]

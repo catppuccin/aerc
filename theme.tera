@@ -43,6 +43,8 @@ statusline_default.bg=#{{palette.surface0.hex}}
 statusline_error.bold=true
 statusline_success.bold=true
 
+selector_focused.bg=#{{palette.surface0.hex}}
+
 completion_default.selected.bg=#{{palette.surface0.hex}}
 
 [viewer]
