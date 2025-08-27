@@ -36,6 +36,9 @@ selector_focused.bg=#414559
 
 completion_default.selected.bg=#414559
 
+part_filename.selected.bold=true
+part_mimetype.selected.bold=true
+
 [viewer]
 url.fg=#8caaee
 url.underline=true
