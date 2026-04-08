@@ -1,0 +1,59 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+  filename: "dist/catppuccin-{{ flavor.identifier }}"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
+---
+*.default=true
+*.normal=true
+
+default.fg={{ text.hex }}
+
+error.fg={{ red.hex }}
+warning.fg={{ peach.hex }}
+success.fg={{ green.hex }}
+
+tab.fg={{ overlay0.hex }}
+tab.bg={{ mantle.hex }}
+tab.selected.fg={{ text.hex }}
+tab.selected.bg={{ base.hex }}
+tab.selected.bold=true
+
+border.fg={{ crust.hex }}
+border.bold=true
+
+msglist_unread.bold=true
+msglist_flagged.fg={{ yellow.hex }}
+msglist_flagged.bold=true
+msglist_result.fg={{ blue.hex }}
+msglist_result.bold=true
+msglist_*.selected.bold=true
+msglist_*.selected.bg={{ surface0.hex }}
+
+dirlist_*.selected.bold=true
+dirlist_*.selected.bg={{ surface0.hex }}
+
+statusline_default.fg={{ overlay2.hex }}
+statusline_default.bg={{ surface0.hex }}
+statusline_error.bold=true
+statusline_success.bold=true
+
+selector_focused.bg={{ surface0.hex }}
+
+completion_default.selected.bg={{ surface0.hex }}
+
+[viewer]
+url.fg={{ blue.hex }}
+url.underline=true
+header.bold=true
+signature.dim=true
+diff_meta.bold=true
+diff_chunk.fg={{ blue.hex }}
+diff_chunk_func.fg={{ blue.hex }}
+diff_chunk_func.bold=true
+diff_add.fg={{ green.hex }}
+diff_del.fg={{ red.hex }}
+quote_*.fg={{ overlay0.hex }}
+quote_1.fg={{ overlay2.hex }}
