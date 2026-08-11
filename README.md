@@ -50,7 +50,7 @@ styleset-name=catppuccin-$FLAVOR
 ## Building the stylesets
 
 The stylesets are all generated from the `theme.tera` file using the
-[Whiskers](https://github.com/catppuccin/toolbox/tree/main/whiskers) tool. To
+[Whiskers](https://github.com/catppuccin/whiskers) tool. To
 generate them, run `whiskers theme.tera`.
 
 ## 💝 Thanks to
